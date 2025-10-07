@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "name": "alert_script_path",
+      "value": "/opt/scripts/run_alert.sh"
+    },
+    {
+      "name": "alert_mailserver_enabled",
+      "value": "false"
+    },
+    {
+      "name": "alertpublisher_safety_valve",
+      "value": "script.enabled=true\nscript.path=/opt/scripts/run_alert.sh\nscript.arg.1=%CLUSTER%\nscript.arg.2=%ROLE%\nscript.arg.3=%ALERT_NAME%\nscript.arg.4=%SEVERITY%\nscript.arg.5=%ALERT_TEXT%\nscript.arg.6=%EVENT_TIME%\nscript.arg.7=%HOST%"
+    }
+  ]
+}
