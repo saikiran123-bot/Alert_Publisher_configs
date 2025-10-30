@@ -1,0 +1,11 @@
+function App() {
+  return (
+    <div style={{ textAlign: "center", marginTop: "100px" }}>
+      <h1>🚀 React CI/CD Test</h1>
+      <p>This version was deployed automatically!</p>
+      <p>{new Date().toLocaleString()}</p>
+    </div>
+  );
+}
+
+export default App;
