@@ -1,9 +1,13 @@
+import React, { useState } from "react";
+
 function App() {
+  const [count, setCount] = useState(0);
+
   return (
-    <div style={{ textAlign: "center", marginTop: "100px" }}>
-      <h1>🎉 React CI/CD Update Test</h1>
-      <p>This is the NEW version deployed automatically!</p>
-      <p>Updated at: {new Date().toLocaleString()}</p>
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1>Hello, React!</h1>
+      <p>You clicked {count} times.</p>
+      <button onClick={() => setCount(count + 1)}>Click Me</button>
     </div>
   );
 }
